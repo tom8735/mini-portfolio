@@ -1,6 +1,6 @@
 # mini-portfolio
 Mini portfolio front-end realizzato come progetto personale
 
-per accedere al portfolio, collegarsi qui
+Per accedere al portfolio, clicca qui sotto.
 
 https://tom8735.github.io/mini-portfolio/
