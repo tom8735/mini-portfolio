@@ -1,0 +1,92 @@
+
+/* Reset base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeIn 1s ease-out;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.skill-card, .exp-card {
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  color: #fff;
+}
+
+/* Colori per tipo esperienza */
+.skill-card.it, .exp-card.it { background: rgba(42, 75, 255, 0.5); }
+.skill-card.admin, .exp-card.admin { background: rgba(42, 200, 75, 0.5); }
+.skill-card.log, .exp-card.log { background: rgba(255, 165, 0, 0.5); }
+
+/* Hover animati */
+.skill-card:hover, .exp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+  background: rgba(255,255,255,0.25);
+}
+
+/* Hover box centrato */
+.hover-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
+  min-height: 120px;
+  padding: 20px;
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  pointer-events: none;
+  opacity: 0;
+  color: #fff;
+  transition: opacity 0.3s ease, background 0.3s ease;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Animazioni */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px);}
+  to { opacity: 1; transform: transla
